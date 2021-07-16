@@ -1,54 +1,31 @@
 ﻿using System;
 
-namespace Casting
+namespace VariablesAndNames
 {
-    class Program1
+    class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            first();
-            second();
+            int cars = 100;
+            int drivers = 28;
+            int passengers = 90;
+            int seatsInCar = 4;
+
+            int carpoolCapacity = drivers * seatsInCar;
+            int carsDriven = drivers;
+            int carsNotDriven = carpoolCapacity - carsDriven;
+
+            //↓↓ avg or at worst max car capacity
+            double avgPassagersPerCar = passengers / carsDriven <= carsDriven ? passengers / carsDriven : seatsInCar;
+
+
+            Console.WriteLine($"There are { cars} cars available.");
+            Console.WriteLine($"There are only { drivers} drivers available.");
+            Console.WriteLine($"There will be { carsNotDriven} empty cars today.");
+            Console.WriteLine($"We can transport { carpoolCapacity} people today.");
+            Console.WriteLine($"We have { passengers} to carpool today.");
+            Console.WriteLine($"We need to put average of { avgPassagersPerCar} people in each car.");
             Console.ReadKey();
-        }
-
-        static void first()
-        {
-            String a = "1";
-            int b = 2;
-            int c = 3;
-            double d = 4;
-            float e = 5;
-
-            int aInt, bInt, cInt, dInt, eInt;
-            aInt = Int32.Parse(a);
-            bInt = b;
-            cInt = c;
-            dInt = Convert.ToInt32(d);
-            eInt = Convert.ToInt32(e);
-
-            int sum = aInt + bInt + cInt + dInt + eInt;
-
-            Console.WriteLine(sum);
-        }
-
-        static void second()
-        {
-            String a = "1";
-            int b = 2;
-            int c = 3;
-            double d = 4.2;
-            float e = 5.3f;
-
-            int aInt, bInt, cInt, dInt, eInt;
-            aInt = Int32.Parse(a);
-            bInt = b;
-            cInt = c;
-            dInt = Convert.ToInt32(d);
-            eInt = Convert.ToInt32(e);
-
-            int sum = aInt + bInt + cInt + dInt + eInt;
-
-            Console.WriteLine(sum);
         }
     }
 }
