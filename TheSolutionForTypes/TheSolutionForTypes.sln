@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Casting\Casting.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task4 Parrot", "task4 Parrot\task4 Parrot.csproj", "{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSchedule", "ClassSchedule\ClassSchedule.csproj", "{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
