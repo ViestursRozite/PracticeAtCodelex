@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreVariablesAndPrinting", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Casting\Casting.csproj", "{BD09848C-B3AF-4C38-93C0-92C70663C374}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task4 Parrot", "task4 Parrot\task4 Parrot.csproj", "{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BD09848C-B3AF-4C38-93C0-92C70663C374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD09848C-B3AF-4C38-93C0-92C70663C374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD09848C-B3AF-4C38-93C0-92C70663C374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
