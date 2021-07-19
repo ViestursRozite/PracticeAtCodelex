@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreVariablesAndPrinting", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Casting\Casting.csproj", "{BD09848C-B3AF-4C38-93C0-92C70663C374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task4 Parrot", "task4 Parrot\task4 Parrot.csproj", "{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4 Parrot", "task4 Parrot\Task4 Parrot.csproj", "{1C76FA38-D867-4A4B-B1CB-0C2CA0C90153}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSchedule", "ClassSchedule\ClassSchedule.csproj", "{20BE7C76-B519-4976-B8B7-E08FFABFFEA5}"
 EndProject
@@ -17,9 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumCalculator", "SumCalcula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountUppercaseLetters", "CountUppercaseLetters\CountUppercaseLetters.csproj", "{19152817-64BF-415A-BD2E-1206B77FA1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minuteToYearAndDayConversion", "minuteToYearAndDayConversion\minuteToYearAndDayConversion.csproj", "{1C44C970-F92B-405D-A938-4C861D69E45B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinuteToYearAndDayConversion", "minuteToYearAndDayConversion\MinuteToYearAndDayConversion.csproj", "{1C44C970-F92B-405D-A938-4C861D69E45B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "speedCalculator", "speedCalculator\speedCalculator.csproj", "{57047AC2-149E-4F54-8654-B749E1982840}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedCalculator", "speedCalculator\SpeedCalculator.csproj", "{57047AC2-149E-4F54-8654-B749E1982840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SadFor", "SadFor\SadFor.csproj", "{B3A0D716-011F-444C-821D-BBC14890C44F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{57047AC2-149E-4F54-8654-B749E1982840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57047AC2-149E-4F54-8654-B749E1982840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57047AC2-149E-4F54-8654-B749E1982840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A0D716-011F-444C-821D-BBC14890C44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A0D716-011F-444C-821D-BBC14890C44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A0D716-011F-444C-821D-BBC14890C44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A0D716-011F-444C-821D-BBC14890C44F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
