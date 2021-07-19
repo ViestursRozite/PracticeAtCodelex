@@ -40,7 +40,7 @@ namespace speedCalculator
                 speedKmPH = (meters / 1000) / (hours + (minutes / 60) + (seconds / 60 / 60));
                 speedMilPH = (meters / 1609) / (hours + (minutes / 60) + (seconds / 60 / 60));
 
-            Console.WriteLine($"Result:\n" +
+            Console.WriteLine($"\nResult:\n" +
                 $"{Math.Round(speedMtrPSec, 2)} meters per second or\n" +
                 $"{Math.Round(speedKmPH, 2)} kilometers per hour or\n" +
                 $"{Math.Round(speedMilPH, 2)} miles per hour");
