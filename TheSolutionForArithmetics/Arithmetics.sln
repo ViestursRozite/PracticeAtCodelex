@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozaLozaWoza", "CozaLozaWoz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooCorpOvertime", "FooCorpOvertime\FooCorpOvertime.csproj", "{45F514F2-57DB-4903-BC7D-AB95E72D497D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMI", "BMI\BMI.csproj", "{CAFDA984-BD88-45B6-A451-9619E32E60F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFDA984-BD88-45B6-A451-9619E32E60F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFDA984-BD88-45B6-A451-9619E32E60F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFDA984-BD88-45B6-A451-9619E32E60F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFDA984-BD88-45B6-A451-9619E32E60F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
