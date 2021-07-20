@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneIn100", "oneIn100\oneIn1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozaLozaWoza", "CozaLozaWoza\CozaLozaWoza.csproj", "{E2174018-E625-4398-AB6E-8EA2C79A105D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooCorpOvertime", "FooCorpOvertime\FooCorpOvertime.csproj", "{45F514F2-57DB-4903-BC7D-AB95E72D497D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{E2174018-E625-4398-AB6E-8EA2C79A105D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2174018-E625-4398-AB6E-8EA2C79A105D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2174018-E625-4398-AB6E-8EA2C79A105D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F514F2-57DB-4903-BC7D-AB95E72D497D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
