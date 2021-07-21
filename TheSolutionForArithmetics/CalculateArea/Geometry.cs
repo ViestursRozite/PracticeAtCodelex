@@ -8,7 +8,6 @@ namespace CalculateArea
 {
     public class Geometry
     {
-        
         public static double? areaOfCircle(decimal radius)
         {
             if(radius <= 0)

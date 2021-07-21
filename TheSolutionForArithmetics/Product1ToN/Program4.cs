@@ -20,7 +20,6 @@ namespace Product1ToN
             int output = factorial(10);
 
             Console.WriteLine(output);
-
         }
     }
 }

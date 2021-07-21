@@ -18,8 +18,6 @@ namespace oneIn100
             if (numToGuess < guess) Console.WriteLine("too high :c");
 
             return;
-        }
-
-        
+        }        
     }
 }

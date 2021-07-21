@@ -14,9 +14,6 @@ namespace SumAverageRunningInt
 
             Console.WriteLine($"The sum of {lowerBound} to {upperBound} is {midpointOfNums * numberOfNumbers}\n" +
                 $"The average is {midpointOfNums}");
-
-
-
         }
     }
 }

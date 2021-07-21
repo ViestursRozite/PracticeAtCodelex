@@ -7,7 +7,7 @@ namespace CanThisMake15
         static void Main(string[] args)
         {
             Console.WriteLine("Can your numbers make 15? \n" +
-                "write the first and secon number separated by ','\n" +
+                "write the first and second number separated by ','\n" +
                 "3,15\n" +
                 "like the given example of '3' and '15' above\n" +
                 "your numbers:\n");
@@ -33,7 +33,12 @@ namespace CanThisMake15
                 Console.WriteLine(true);
                 return;
             }
-            return;
+            else
+            {
+                Console.WriteLine(false);
+                return;
+            }
+            
         }
     }
 }

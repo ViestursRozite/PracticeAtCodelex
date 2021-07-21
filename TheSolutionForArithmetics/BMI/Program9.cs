@@ -10,7 +10,6 @@ namespace BMI
             whatIsMyBMI(185, 90);
             whatIsMyBMI(185, 50);
 
-
             void whatIsMyBMI(decimal heightCentimeters, decimal weightKilograms)
             {
                 decimal heightInches = heightCentimeters / 2.54M;
@@ -31,10 +30,6 @@ namespace BMI
                     Console.WriteLine("Weight within norms");
                 }
             }
-
-
-
-
         }
     }
 }

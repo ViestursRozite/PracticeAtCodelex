@@ -23,8 +23,6 @@ namespace CheckOddEven
             CheckOddEven(1);
             CheckOddEven(-1);
             CheckOddEven(0);
-
-
         }
     }
 }

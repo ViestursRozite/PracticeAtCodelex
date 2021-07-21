@@ -15,23 +15,25 @@ namespace CozaLozaWoza
             int numbersPerLine = 11;//write this many numbers on each line
             int totalNumbers = 110;
             string finalResult = "";
-                        
-            string calcPosition(int inputPosition) //spit out either a string of words or a num if no words can be written in this position
+
+            //out a (string) containing words or a (string) containing a num           
+            string calcPosition(int positionInTheNumList) 
             {
                 string outputOfThisFunc = "";
-                bool writeAWordAsOutput = false;
+                bool funcIsGoingToOutputAWord = false;
 
                 foreach (var wordValuePair in wordAndValueList)
                 {
-                    string theWord = (string)wordValuePair[0];
-                    int theNumber = (int)wordValuePair[1];
-                    bool imAllowedToWriteAWord = false;
-
-                    if (inputPosition % theNumber == 0) imAllowedToWriteAWord = true;
-                    if (imAllowedToWriteAWord) writeAWordAsOutput = true;
-                    if (imAllowedToWriteAWord) outputOfThisFunc += theWord;
+                    string stringFromWordValPair = (string)wordValuePair[0];
+                    int numFromWordValPair = (int)wordValuePair[1];
+                    
+                    if (positionInTheNumList % numFromWordValPair == 0)
+                    {
+                        funcIsGoingToOutputAWord = true;
+                        outputOfThisFunc += stringFromWordValPair;
+                    }
                 }
-                if (!writeAWordAsOutput) outputOfThisFunc = $"{inputPosition}";
+                if (!funcIsGoingToOutputAWord) outputOfThisFunc = $"{positionInTheNumList}";
                 return outputOfThisFunc;//either words or 1 number
             }
 
