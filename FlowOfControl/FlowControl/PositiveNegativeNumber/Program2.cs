@@ -2,19 +2,20 @@
 
 namespace PositiveNegativeNumber
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {
+            //         get input
             Console.WriteLine("Enter the number.");
-            var input = Console.ReadKey();
-            /*
-            fixme
-            if (?)
+            decimal input = 0;
+            decimal.TryParse(Console.ReadLine(), out input);
+           
+            if (input > 0)
             {
                 Console.WriteLine("Number is positive");
             } 
-            else if (?) 
+            else if (input < 0) 
             {
                 Console.WriteLine("Number is negative");
             } 
@@ -22,7 +23,8 @@ namespace PositiveNegativeNumber
             {
                 Console.WriteLine("Number is zero");
             }
-            */
+
+            Console.ReadKey();
         }
     }
 }
