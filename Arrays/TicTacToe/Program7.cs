@@ -2,7 +2,7 @@
 
 namespace TicTacToe
 {
-    class Program6
+    class Program7
     {
         private static string[,] board = new string[3, 3];
 
