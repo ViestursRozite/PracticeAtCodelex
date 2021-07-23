@@ -14,7 +14,6 @@ namespace PrintDayInWord
             int dayNumber = input;
             
             //                  nested if
-            //what can a 'nested if' be used for in this task? 
             if (true)
             {
                 if (dayNumber == 1) Console.WriteLine("Monday");

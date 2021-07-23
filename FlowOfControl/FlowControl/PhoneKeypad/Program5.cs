@@ -7,7 +7,7 @@ namespace PhoneKeypad
     {
         static void Main(string[] args)
         {
-            //                    Ask user for input
+            //Ask user for input
             string GetUserInput()
             {
                 Console.WriteLine("Enter some text and i will generate \n" +
@@ -18,10 +18,10 @@ namespace PhoneKeypad
                     .ToLower();
             }
 
-            //           write down user input
+            //write down user input
             string inputAsLowercase = GetUserInput();
 
-            //              make keypad
+            //make keypad
             string[] phoneKeypad = new string[]
             {
                  "1",  "abc2",  "def3",
@@ -29,16 +29,16 @@ namespace PhoneKeypad
                  "pqrs7",  "tuv8", "wxyz9"
             };
 
-            //      FigureWhatToPress on the keypad 
+            //FigureWhatToPress on the keypad 
             string FigureWhatToPress(char symbIWantToType)
             {
-                foreach(string button in phoneKeypad)//                                                                 look at buttons
+                foreach(string button in phoneKeypad)//look at buttons
                 {
                     
-                    if (button.IndexOf(symbIWantToType) != -1)//                                                        is the letter on this button 
+                    if (button.IndexOf(symbIWantToType) != -1)//is the letter on this button 
                     {
-                        char thisNumber = (char)button[button.Length - 1];//                                                see which button i press
-                        int pressItXTimes = button.IndexOf(symbIWantToType) + 1;//                                          see how many times I mash it
+                        char thisNumber = (char)button[button.Length - 1];//see which button i press
+                        int pressItXTimes = button.IndexOf(symbIWantToType) + 1;//see how many times I mash it
 
                         return new string(thisNumber, pressItXTimes);
                     }
@@ -47,7 +47,7 @@ namespace PhoneKeypad
                 return "wait a bit";
             }
 
-            //                  output a wall of text
+            //output a wall of text
             foreach(char letter in inputAsLowercase)
             {
                 Console.WriteLine("You need to press: " + FigureWhatToPress(letter));
