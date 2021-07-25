@@ -6,11 +6,6 @@ namespace Exercise8
 {
     class Program8
     {
- 
-  //- It must stop when all the letters are guessed.
-  //- It must give them limited tries and stop after they run out.
-  //- It must display letters they have already guessed(either only the incorrect guesses or all guesses).
-
         private static string[] wordsToGuess = new string[] 
         {
         "every", "time", "you", "play", "hangman",
@@ -90,7 +85,7 @@ namespace Exercise8
                 {
                     this.GameMove++;
                     this.NumGuessesLeft--;// player guessed incorrectly decriment guess
-                    this.WrongLetters.Add(character);
+                    this.WrongLetters.Add(character);//wrie down the wron guess
                     return this.StateOfGuess;
                 }
             }
