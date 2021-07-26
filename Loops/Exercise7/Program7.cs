@@ -48,7 +48,7 @@ namespace Exercise7
             while (playerWantsToPlay == "y");
 
             Console.WriteLine($"You finished the game with {playersPoints} points");
-            Console.ReadKey;
+            Console.ReadKey();
         }
     }
 }
