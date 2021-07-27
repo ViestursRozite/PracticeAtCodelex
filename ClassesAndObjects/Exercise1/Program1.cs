@@ -7,7 +7,6 @@ namespace Exercise1
         decimal Price;
         int Amount;
         string Name;
-
         public Product(decimal price, int amount, string name)
         {
             this.Price = price;
