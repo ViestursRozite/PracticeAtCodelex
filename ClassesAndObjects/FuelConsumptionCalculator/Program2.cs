@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FuelConsumptionCalculator
 {
-    class Program
+
+    class Program2
     {
         private static void Main(string[] args)
         {
