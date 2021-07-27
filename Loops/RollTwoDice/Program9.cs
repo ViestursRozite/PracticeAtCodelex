@@ -37,7 +37,7 @@ namespace RollTwoDice
                 }
                 Console.WriteLine($"Summ: {sumHolder}\n");
 
-                if (sumHolder != userInput)
+                if (sumHolder != userInput)//react to roll
                 {
                     Console.WriteLine($"Aww come on! One more try");
                 }
