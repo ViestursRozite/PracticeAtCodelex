@@ -4,31 +4,66 @@ namespace Exercise1
 {
     class Product
     {
-        decimal Price;
-        int Amount;
-        string Name;
+        decimal price;
+        int amount;
+        string name;
         public Product(decimal price, int amount, string name)
         {
-            this.Price = price;
-            this.Amount = amount;
-            this.Name = name;
+            this.price = price;
+            this.amount = amount;
+            this.name = name;
         }
 
+        public decimal PriceChange
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                price += value;
+            }
+        }
+
+        public int AmountChange
+        {
+            get
+            {
+                return amount;
+            }
+            set
+            {
+                amount += value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
         public void PrintProduct()
         {
-                                            //Banana, price 1.1, amount 13
-            Console.WriteLine($"{Name}, price {Decimal.Round(Price, 2)}, amount {Amount}");
+                                            //Banana, price 1.10, amount 13
+            Console.WriteLine($"{Name}, price {Decimal.Round(PriceChange, 2)}, amount {AmountChange}");
         }
 
-        public void ChangeQuantity(int amount)
-        {
-            this.Amount += amount;
-        }
+        //public void ChangeQuantity(int amount)
+        //{
+        //    this.amount += amount;
+        //}
 
-        public void ChangePrice(decimal amount)
-        {
-            this.Price += amount;
-        }
+        //public void ChangePrice(decimal amount)
+        //{
+        //    this.price += amount;
+        //}
     }
     class Program1
     {
@@ -46,8 +81,8 @@ namespace Exercise1
             
             Console.WriteLine("\n change:");
 
-            iPhone.ChangePrice(-0.01m);
-            iPhone.ChangeQuantity(11);
+            iPhone.PriceChange = -0.01m;
+            iPhone.AmountChange = 11;
             iPhone.PrintProduct();
 
             Console.ReadKey();
