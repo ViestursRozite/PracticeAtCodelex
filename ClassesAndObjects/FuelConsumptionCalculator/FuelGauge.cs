@@ -1,37 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FuelConsumptionCalculator
 {
-
-    /*
-     * Its responsibilities are as follows:
- - To know the car’s current amount of fuel, in liters. done
- - To report the car’s current amount of fuel, in liters. done
- - To be able to increment the amount of fuel by 1 liter.
- This simulates putting fuel in the car. ( The car can hold a maximum of 70 liters.)
- - To be able to decrement the amount of fuel by 1 liter,
- if the amount of fuel is greater than 0 liters. This simulates burning fuel as the car runs.
-     */
-    class FuelGauge
+    public class FuelGauge
     {
         public int fuel;
+        Car thisFuelsCar;
 
-        public FuelGauge(int fuel)
+        public FuelGauge(int fuel, Car carInstance)
         {
             this.fuel = fuel;
+            this.thisFuelsCar = carInstance;//fuel can effect car and itself trough car (thisFuelsCar.thisCarsFuel)
         }
 
-        public int Fuel//know the car’s current amount of fuel, in liters
+        public int Fuel
         {
             get { return fuel; }    
             set 
             {
-                if (value <= 70 && fuel < value) fuel = value;//can only add fuel if it makes sense
-                else fuel = fuel; 
+                if (value == 1 && fuel < 70)
+                {
+                    fuel += value;
+                }
+                else if (value == -1 && fuel >= 1)
+                {
+                    fuel += value;
+                }
+                else
+                {
+                    fuel += 0;
+                    Console.WriteLine("Sploosh- the fuel hits the ground");
+                }
             }
         }
 
@@ -42,7 +41,7 @@ namespace FuelConsumptionCalculator
 
         public void FuelUp()
         {
-            fuel++;
+            Fuel = 1;
         }
 
         public void FuelDown()

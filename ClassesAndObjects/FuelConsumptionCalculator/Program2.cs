@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FuelConsumptionCalculator
 {
@@ -11,30 +7,27 @@ namespace FuelConsumptionCalculator
     {
         private static void Main(string[] args)
         {
-            int startKilometers;
-            int liters;
-            
-            Console.WriteLine();
+            Car car1 = new Car(0);//make a car
+            Odometer odo1 = new Odometer(0, car1);//Make odometer for car
+            FuelGauge fuel1 = new FuelGauge(50, car1);// Make fuelGauge for car 50 l
+            car1.ThisCarsOdometer = odo1;// Let car know it has an Odometer
+            car1.ThisCarsFuel = fuel1;//Let car know it has a FuelGauge
 
-            Car car = new Car(0);
-            Car car1 = new Car(0);
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 510; i++)//Drive for 500 
             {
-                Console.Write("Enter first reading: ");
-                startKilometers = Convert.ToInt32(Console.ReadLine());    
-                Console.Write("Enter liters reading: ");
-                liters = Convert.ToInt32(Console.ReadLine());
-                car.FillUp(startKilometers, liters);
-                
-                Console.Write("Enter first reading: ");
-                startKilometers = Convert.ToInt32(Console.ReadLine());    
-                Console.Write("Enter liters reading: ");
-                liters = Convert.ToInt32(Console.ReadLine());
-                car1.FillUp(startKilometers, liters);
+                car1.Drive();
+                car1.ThisCarsFuel.Report();
+                car1.ThisCarsOdometer.Report();
             }
 
-            Console.WriteLine("Kilometers per liter are " + car.CalculateConsumption() + " gasHog:" + car.GasHog());
-            Console.WriteLine("Car1 Kilometers per liter are " + car1.CalculateConsumption()+ " economyCar:" + car.EconomyCar());
+            for (int i = 0; i < 75; i++)//Pour 5 l too many in car
+            {
+                car1.ThisCarsFuel.FuelUp();
+                car1.ThisCarsFuel.Report();
+            }
+
+            Console.WriteLine("\ndone");
+
             Console.ReadKey();
         }
     }
