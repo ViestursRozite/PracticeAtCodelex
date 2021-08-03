@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace VideoStore
 {
-    class Program
+    class Program4
     {
         private const int _countOfMovies = 3;
         private static VideoStore _videoStore = new VideoStore();
         private static void Main(string[] args)
         {
+            Movie movie1 = new Movie("Casino Royale", "Eon Productions", "PG13");
+            Movie movie2 = new Movie("Glass", "Buena Vista International", "PG13");
+            Movie movie3 = new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures");//PG raiting is default
+
+
+            {
+
+
+
+
+
             while (true)
             {
                 Console.WriteLine("Choose the operation you want to perform ");
