@@ -1,6 +1,5 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using FuelConsumptionCalculator;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestProject1
 {
@@ -8,13 +7,11 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestCarConstructor()
         {
             Car cr = new Car(0, 5, 5);
             var res = cr.CalculateConsumption();
             Assert.AreEqual(res, 1);
         }
-
-
     }
 }
