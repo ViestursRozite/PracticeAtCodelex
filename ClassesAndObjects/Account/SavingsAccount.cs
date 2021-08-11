@@ -1,6 +1,6 @@
 ﻿namespace Account
 {
-    class SavingsAccount
+    public class SavingsAccount
     {
         
         private decimal _anualInterest;
@@ -49,6 +49,12 @@
         {
             get => _anualInterest;
             set => _anualInterest = value;
+        }
+
+        public decimal Balance
+        {
+            get => _balance;
+            set => _balance = value;
         }
 
     }

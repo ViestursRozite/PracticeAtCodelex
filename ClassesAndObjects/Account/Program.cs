@@ -10,35 +10,6 @@ namespace Account
     {
         private static void Main(string[] args)
         {
-            //var aAccount = new SavingsAccount("A account", 100.00m);
-            //var bAccount = new SavingsAccount("B account",0);
-            //var cAccount = new SavingsAccount("C Account", 0);
-            //Console.WriteLine("Initial state");
-            //Console.WriteLine(aAccount.balance());
-            //Console.WriteLine(bAccount.balance());
-            //Console.WriteLine(cAccount.balance());
-            //aAccount.Name = "GGGG";
-            //Transfer(aAccount,bAccount, 50.0m);
-            //Transfer(bAccount,cAccount, 25.0m);
-
-            //Console.WriteLine("Final state");
-            //Console.WriteLine(aAccount);
-            //Console.WriteLine(bAccount);
-            //Console.WriteLine(cAccount);
-
-            //Console.WriteLine("Time passes");
-
-            //aAccount.CalcInterestMonth(1);
-
-            //bAccount.CalcInterestMonth(6);
-
-            //cAccount.CalcInterestMonth(12);
-            //Console.WriteLine("1 month");
-            //Console.WriteLine(aAccount);
-            //Console.WriteLine("6 months");            
-            //Console.WriteLine(bAccount);
-            //Console.WriteLine("1 year");            
-            //Console.WriteLine(cAccount);
 
             var firstAccount = new SavingsAccount(AskForString("Give me the name of the first savings account"),
                 AskForDecimal("enter starting balance"), 
