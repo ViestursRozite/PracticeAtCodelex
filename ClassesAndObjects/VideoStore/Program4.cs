@@ -16,79 +16,32 @@ namespace VideoStore
             Movie movie2 = new Movie("Glass", "Buena Vista International", "PG13");
             Movie movie3 = new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures");//PG raiting is default
 
+            // Testing for task 11
+            VideoStore coolStoreName = new VideoStore();
+            coolStoreName.AddVideo("The Matrix");
+            coolStoreName.AddVideo("The Matrix");
+            coolStoreName.AddVideo("Godfather II");
+            coolStoreName.AddVideo("Star Wars Episode IV: A New Hope");
+            // giving out ratings
+            coolStoreName.TakeUsersRating(5, "The Matrix");
+            coolStoreName.TakeUsersRating(3, "The Matrix");
+            coolStoreName.TakeUsersRating(2, "Godfather II");
+            coolStoreName.TakeUsersRating(3, "Star Wars Episode IV: A New Hope");
+            coolStoreName.TakeUsersRating(4, "Star Wars Episode IV: A New Hope");
+            //Rent out videoes
+            Console.WriteLine(coolStoreName.Checkout("The Matrix"));// rent out 1st instance
+            Console.WriteLine(coolStoreName.Checkout("The Matrix"));// rent out 2nd instance
+            Console.WriteLine(coolStoreName.Checkout("The Matrix"));// nothing should happen
+            Console.WriteLine(coolStoreName.Checkout("Godfather II"));//rent out only instance
+            Console.WriteLine(coolStoreName.ReturnVideo("The Matrix"));//return 1st instance
+            Console.WriteLine(coolStoreName.ReturnVideo("The Matrix"));//return 2nd instance
+            Console.WriteLine(coolStoreName.ReturnVideo("The Matrix"));//try returning too many movies
+            Console.WriteLine(coolStoreName.ReturnVideo("101 Dalmations"));//return a movie we do not have
 
-            {
+            coolStoreName.ListInventory();
 
-
-
-
-
-                /*while (true)
-                {
-                    Console.WriteLine("Choose the operation you want to perform ");
-                    Console.WriteLine("Choose 0 for EXIT");
-                    Console.WriteLine("Choose 1 to fill video store");
-                    Console.WriteLine("Choose 2 to rent video (as user)");
-                    Console.WriteLine("Choose 3 to return video (as user)");
-                    Console.WriteLine("Choose 4 to list inventory");
-
-                    int n = Convert.ToByte(Console.ReadLine());
-
-                    switch (n)
-                    {
-                        case 0:
-                            return;
-                        case 1:
-                            FillVideoStore();
-                            break;
-                        case 2:
-                            RentVideo();
-                            break;
-                        case 3:
-                            ReturnVideo();
-                            break;
-                        case 4:
-                            ListInventory();
-                            break;
-                        default:
-                            return;
-                    }
-                }*/
-            }
-
-            //private static void ListInventory()
-            //{
-            //    _videoStore.ListInventory();
-            //}
-
-            //private static void FillVideoStore()
-            //{
-            //    for (var i = 0; i < _countOfMovies; i++)
-            //    {
-            //        Console.WriteLine("Enter movie name");
-            //        string movieName = Console.ReadLine();
-
-            //        Console.WriteLine("Enter rating");
-            //        int rating = Convert.ToInt16(Console.ReadLine());
-
-            //        _videoStore.AddVideo(movieName);
-            //        _videoStore.TakeUsersRating(rating, movieName);
-            //    }
-            //}
-
-            //private static void RentVideo()
-            //{
-            //    Console.WriteLine("Enter movie name");
-            //    string movieName = Console.ReadLine();
-            //    _videoStore.Checkout(movieName);
-            //}
-
-            //private static void ReturnVideo()
-            //{
-            //    Console.WriteLine("Enter movie name");
-            //    string movieName = Console.ReadLine();
-            //    _videoStore.ReturnVideo(movieName);
-            //}
+            Console.ReadKey();
         }
+      
     }
 }
