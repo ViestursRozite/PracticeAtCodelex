@@ -29,7 +29,6 @@ namespace Exercise9
             pointSwapHolder = p2.X;
             p2.X = p1.X;
             p1.X = pointSwapHolder;
-
         }
     }
 }

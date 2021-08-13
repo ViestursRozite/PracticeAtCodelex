@@ -61,13 +61,5 @@ namespace VideoStore
             }
             return (result / count);
         }
-
-
-
-
-
-
-
-
     }
 }

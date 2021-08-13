@@ -54,16 +54,6 @@ namespace Exercise1
                                             //Banana, price 1.10, amount 13
             Console.WriteLine($"{Name}, price {Decimal.Round(PriceChange, 2)}, amount {AmountChange}");
         }
-
-        //public void ChangeQuantity(int amount)
-        //{
-        //    this.amount += amount;
-        //}
-
-        //public void ChangePrice(decimal amount)
-        //{
-        //    this.price += amount;
-        //}
     }
     class Program1
     {

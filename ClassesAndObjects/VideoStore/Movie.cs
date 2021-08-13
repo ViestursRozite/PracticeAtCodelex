@@ -20,23 +20,6 @@ namespace VideoStore
         {
             //                                PG tagged movies
              return  arrayMovies.Where(movie => movie.rating == "PG").ToArray();
- 
-            ;
-        }
-
-        public void BeingCheckedOut()
-        {
-            
-        }
-
-        public void BeingReturned()
-        {
-            
-        }
-
-        public void ReceivingRating(double rating)
-        {
-            
         }
 
         public double AverageRating()

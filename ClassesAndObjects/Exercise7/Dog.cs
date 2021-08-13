@@ -36,7 +36,5 @@ namespace Exercise7
         {
             return this.Mother == checkThisDog.Mother;
         }
-
-
     }
 }

@@ -2,7 +2,6 @@
 {
     public class SavingsAccount
     {
-        
         private decimal _anualInterest;
         private string _name;
         private decimal _balance;

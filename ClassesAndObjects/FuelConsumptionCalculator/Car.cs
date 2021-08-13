@@ -28,37 +28,27 @@ namespace FuelConsumptionCalculator
 
         public FuelGauge ThisCarsFuel
         {
-          get
+            get
             {
                 return this.thisCarsFuel;
             }
-          set
+            set
             {
                 this.thisCarsFuel = value;
             }
-
         }
 
         public Odometer ThisCarsOdometer
-        { get
+        { 
+            get
             {
                 return this.thisCarsOdometer;
             }
-          set
+            set
             {
                 this.thisCarsOdometer = value;
             } 
         }
-
-
-        //public bool IsTimeToLowerFuel
-        //{get; set;}
-
-        //public int InformationPasser 
-        //{
-        //    get { return informationPasser; }
-        //    set { informationPasser = value; }
-        //}
 
         public void Drive()
         {
@@ -77,9 +67,7 @@ namespace FuelConsumptionCalculator
             {
                 Console.WriteLine("No fuel...");
             }
-
         }
-
 
         public double CalculateConsumption()
         {
