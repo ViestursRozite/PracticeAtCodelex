@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{387BD104-0786-4B7B-AD53-FD01CD05D578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "Exercise2\Exercise3.csproj", "{690AAD4B-4F9A-417C-8D88-BDFCABED6FA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2", "Exercise2\Exercise2.csproj", "{690AAD4B-4F9A-417C-8D88-BDFCABED6FA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightPlanner", "FlightPlanner\FlightPlanner.csproj", "{7617A60C-18A2-4FF5-9191-7137C7C2E8DA}"
 EndProject
