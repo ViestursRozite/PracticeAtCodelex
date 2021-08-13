@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListExercise9
 {
-    class Program
+    class List09
     {
         static void Main(string[] args)
         {
@@ -30,9 +30,13 @@ namespace ListExercise9
                 "Pink"
             };
 
+            Console.WriteLine(string.Join(",", firstList));
             Console.WriteLine(string.Join(",", secondList));
-            //TODO: Write a C# program to join two lists.
-            //...
+
+            var thirdList = firstList.Concat(secondList);
+
+            Console.WriteLine("[{0}]", string.Join(",", thirdList));
+            Console.ReadKey();
         }
     }
 }

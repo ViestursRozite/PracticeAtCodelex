@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListExercise5
+namespace ListExercise6
 {
-    class Program
+    class List06
     {
         static void Main(string[] args)
         {
@@ -14,16 +14,18 @@ namespace ListExercise5
             {
                 "Red",
                 "Green",
-                "Violet",
+                "Orange",
                 "White",
                 "Black"
             };
 
             Console.WriteLine(string.Join(",", colors));
 
-            //TODO: Change the third element with "Yellow"
+            colors.Remove(colors[2]);//Remove the third element from the list.
 
+            Console.WriteLine("After removing third element from the list:");
             Console.WriteLine(string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }

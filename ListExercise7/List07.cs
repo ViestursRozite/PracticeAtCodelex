@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListExercise7
 {
-    class Program
+    class List07
     {
         static void Main(string[] args)
         {
@@ -19,15 +19,16 @@ namespace ListExercise7
                 "Black"
             };
 
-            //      TODO: Check if list contains "White" element
-            //        if (...) 
-            //        {
-            //            Console.WriteLine("Found the element");
-            //        } 
-            //        else 
-            //        {
-            //            Console.WriteLine("There is no such element");
-            //        }
+        //TODO: Check if list contains "White" element
+            if (colors.IndexOf("White") != -1) 
+            {
+                Console.WriteLine($"Found the element: colors[{colors.IndexOf("White")}]");
+            }
+            else
+            {
+                Console.WriteLine("There is no such element");
+            }
+            Console.ReadKey();
         }
     }
 }

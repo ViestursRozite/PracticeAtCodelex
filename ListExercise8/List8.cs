@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListExercise6
+namespace ListExercise8
 {
-    class Program
+    class List8
     {
         static void Main(string[] args)
         {
@@ -19,12 +19,14 @@ namespace ListExercise6
                 "Black"
             };
 
+            Console.Write("List before sort: ");
             Console.WriteLine(string.Join(",", colors));
 
-            //TODO: Remove the third element from the list.
+            colors.Sort();
 
-            Console.WriteLine("After removing third element from the list:");
+            Console.Write("List after sort: ");
             Console.WriteLine(string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }

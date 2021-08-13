@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListExercise10
 {
-    class Program
+    class List10
     {
         static void Main(string[] args)
         {
@@ -20,13 +17,13 @@ namespace ListExercise10
             };
 
             Console.WriteLine("Original array list: ");
-            Console.WriteLine(string.Join(",", colors));
+            Console.WriteLine("[{0}]", string.Join(",", colors));
 
-            //TODO: Remove all elements from list
-            //...
+            colors = new List<string>();
 
             Console.WriteLine("New array list: ");
-            Console.WriteLine(string.Join(",", colors));
+            Console.WriteLine("[{0}]", string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }
