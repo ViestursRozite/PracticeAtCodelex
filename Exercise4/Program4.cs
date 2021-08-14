@@ -28,7 +28,6 @@ namespace Exercise4
             }
         }
 
-
         static void Main(string[] args)
         {
             int[] ints = new int[] { 2, 6, 11, 55, 77, 5, 87, 3654, 8976, 253, 12353, 7657, 139 };
