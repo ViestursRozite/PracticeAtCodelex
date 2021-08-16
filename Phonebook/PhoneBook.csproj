@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="PhoneDirectory.cs" />
     <Compile Include="PhoneEntry.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program8.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

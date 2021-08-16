@@ -1,65 +1,38 @@
 using System;
+using System.Collections.Generic;
 
 namespace PhoneBook
 {
     public class PhoneDirectory
     {
-        private PhoneEntry[] _data;
-        private int _dataCount;
+        private SortedDictionary<string, string> _data;
 
         public PhoneDirectory() {
-            _data = new PhoneEntry[1];
-            _dataCount = 0;
+            _data = new SortedDictionary<string, string>();
         }
 
-        private int Find(string name) {
-            for (var i = 0; i < _dataCount; i++) 
-            {
-                if (_data[i].name.Equals(name)) 
-                {
-                    return i;
-                }
-            }
+        private bool Find(string name) 
+        {
+            return this._data.ContainsKey(name);
+        }
 
-            return -1;
+        public SortedDictionary<string, string> GetDict()
+        {
+            return this._data;
         }
 
         public string GetNumber(string name) 
         {
-            var position = Find(name);
-            if (position == -1) 
-            {
-                return null;
-            } 
-            else 
-            {
-                return _data[position].number;
-            }
+            return this._data[name];
         }
 
-        public void PutNumber(string name, string number) 
+        public void PutNumber(PhoneEntry entry) 
         {
-            if (name == null || number == null) 
-            {
-                throw new Exception("name and number cannot be null");
-            }
-
-            var i = Find(name);
-            if (i >= 0) 
-            {
-                _data[i].number = number;
-            }
-            else 
-            {
-                if (_dataCount == _data.Length) 
-                {
-                    Array.Resize(ref _data, (2 * _data.Length));
-                }
-
-                var newEntry = new PhoneEntry {name = name, number = number}; // Create a new pair.
-                _data[_dataCount] = newEntry;   // Add the new pair to the array.
-                _dataCount++;
-            }
+            this._data[entry.name] = entry.number;
+        }
+        public void PutNumber(string name, string number)
+        {
+            this._data[name] = number;
         }
     }
 }
