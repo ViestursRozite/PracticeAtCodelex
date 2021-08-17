@@ -7,7 +7,8 @@ namespace PhoneBook
     {
         private SortedDictionary<string, string> _data;
 
-        public PhoneDirectory() {
+        public PhoneDirectory() 
+        {
             _data = new SortedDictionary<string, string>();
         }
 

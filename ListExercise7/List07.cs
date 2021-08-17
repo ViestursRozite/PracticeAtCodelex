@@ -19,7 +19,6 @@ namespace ListExercise7
                 "Black"
             };
 
-        //TODO: Check if list contains "White" element
             if (colors.IndexOf("White") != -1) 
             {
                 Console.WriteLine($"Found the element: colors[{colors.IndexOf("White")}]");

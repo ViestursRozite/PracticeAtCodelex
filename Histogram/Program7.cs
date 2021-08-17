@@ -9,11 +9,12 @@ namespace Histogram
 {
     class Program7
     {
-        private const string Path = @"C:\Darbs\12,08,2021\Histogram\midtermscores.txt";
+        private const string fileName = "midtermscores.txt";
+        private static string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\", fileName));
 
         private static void Main(string[] args)
         {
-            string readText = File.ReadAllText(Path);
+            string readText = File.ReadAllText(path);
             Dictionary<string, List<int>> scores = new Dictionary<string, List<int>>();
 
             scores.Add("00-09", new List<int>());
