@@ -52,5 +52,8 @@
   <ItemGroup>
     <Content Include="flights.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

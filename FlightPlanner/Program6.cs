@@ -27,7 +27,10 @@ namespace FlightPlanner
             }
             return userChoice;
         }
-        private const string Path = @"C:\Darbs\12,08,2021\FlightPlanner\flights.txt";
+
+        private const string fileName = "flights.txt";
+        private static string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\", fileName));
+        //private const string Path = @"C:\Darbs\12,08,2021\FlightPlanner\flights.txt";
 
         private static void Main(string[] args)
         {
@@ -35,7 +38,7 @@ namespace FlightPlanner
             HashSet<string> travelStartingPoints = new HashSet<string>();//stores starting airports
             Dictionary<string, HashSet<string>> travelMap = new Dictionary<string, HashSet<string>>();
 
-            var readText = File.ReadAllLines(Path);
+            var readText = File.ReadAllLines(path);
             foreach (var s in readText)//unique starting points to hashSet
             {
                 //locations formatted: "New York -> Hana Lu Lu"
