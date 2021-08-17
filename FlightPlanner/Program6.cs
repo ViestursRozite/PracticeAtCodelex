@@ -30,7 +30,6 @@ namespace FlightPlanner
 
         private const string fileName = "flights.txt";
         private static string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\", fileName));
-        //private const string Path = @"C:\Darbs\12,08,2021\FlightPlanner\flights.txt";
 
         private static void Main(string[] args)
         {
@@ -84,7 +83,8 @@ namespace FlightPlanner
                 Console.ReadKey();
                 return;
             }
-                string place = travelMap.Keys.ElementAt(whereverUserWants - 1);
+
+            string place = travelMap.Keys.ElementAt(whereverUserWants - 1);
             List<string> travelPlan = new List<string>();
 
             bool runLoop = true;
