@@ -2,28 +2,18 @@ using System;
 
 namespace DragRace
 {
-    public class Tesla
+    public class Tesla : CarClass, ICar
     {
-        private int currentSpeed = 0;
-
-        public void SpeedUp() 
+        public Tesla(int acceleration, int brakingPower)
         {
-            currentSpeed;
+            this.currentSpeed = 0;
+            this.acceleration = acceleration;
+            this.brakingPower = brakingPower;
+            this.engineSound = "-- silence ---";
         }
-
-        public void SlowDown() 
+        public new string CarType()
         {
-            currentSpeed;
-        }
-
-        public string ShowCurrentSpeed() 
-        {
-            return currentSpeed.ToString();
-        }
-
-        public void StartEngine() 
-        {
-            Console.WriteLine("-- silence ---");
+            return $"{this.GetType()}";
         }
     }
 }

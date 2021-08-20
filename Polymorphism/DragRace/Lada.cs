@@ -1,15 +1,17 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace DragRace
+namespace DragRace 
 {
-    public class Bmw : CarClass, ICar
+    class Lada : CarClass, ICar
     {
-        public Bmw(int acceleration, int brakingPower)
+        public Lada(int acceleration, int brakingPower)
         {
             this.currentSpeed = 0;
             this.acceleration = acceleration;
             this.brakingPower = brakingPower;
-            this.engineSound = "Rrrrrrr.....";
+            this.engineSound = "Brbrrrr....";
         }
         public new string CarType()
         {

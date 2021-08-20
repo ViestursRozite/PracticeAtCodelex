@@ -2,28 +2,18 @@ using System;
 
 namespace DragRace
 {
-    public class Audi
+    public class Audi : CarClass, ICar
     {
-        private int currentSpeed = 0;
-
-        public void SpeedUp() 
+        public Audi(int acceleration, int brakingPower)
         {
-            currentSpeed;
+            this.currentSpeed = 0;
+            this.acceleration = acceleration;
+            this.brakingPower = brakingPower;
+            this.engineSound = "Rrrrrrr.....";
         }
-
-        public void SlowDown() 
+        public new string CarType()
         {
-            currentSpeed;
-        }
-
-        public string ShowCurrentSpeed() 
-        {
-            return currentSpeed.ToString();
-        }
-
-        public void StartEngine() 
-        {
-            Console.WriteLine("Rrrrrrr.....");
+            return $"{this.GetType()}";
         }
     }
 }
