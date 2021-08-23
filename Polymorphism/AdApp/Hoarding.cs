@@ -6,8 +6,10 @@ namespace AdApp
         //per day
         private int numDays;
 
-        public Hoarding(int fee) : base(fee)
+        public Hoarding(int fee, int rate, int numDays) : base(fee)
         {
+            this.numDays = numDays;
+            this.rate = rate;
         }
 
         public new int Cost() 
