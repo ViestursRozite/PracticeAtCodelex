@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "MakeSounds\Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "Persons\Persons.csproj", "{E7E3D7B0-D278-44B7-A3D7-003047589CBE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firm", "Firm\Firm.csproj", "{F7CC2A72-64E9-4309-95E7-2CD086CB38E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E7E3D7B0-D278-44B7-A3D7-003047589CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E3D7B0-D278-44B7-A3D7-003047589CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E3D7B0-D278-44B7-A3D7-003047589CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7CC2A72-64E9-4309-95E7-2CD086CB38E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CC2A72-64E9-4309-95E7-2CD086CB38E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CC2A72-64E9-4309-95E7-2CD086CB38E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CC2A72-64E9-4309-95E7-2CD086CB38E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
