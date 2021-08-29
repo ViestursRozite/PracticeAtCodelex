@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace CozaLozaWoza
 {
-    class Program6
+    public class Program6
     {
-        static void Main(string[] args)
+        static public string CozaLozaWoza()
         {
             List<object[]> wordAndValueList = new List<object[]>();
             wordAndValueList.Add(new object[] { "Coza", 3 });
@@ -17,7 +17,7 @@ namespace CozaLozaWoza
             string finalResult = "";
 
             //out a (string) containing words or a (string) containing a num           
-            string calcPosition(int positionInTheNumList) 
+            string calcPosition(int positionInTheNumList)
             {
                 string outputOfThisFunc = "";
                 bool funcIsGoingToOutputAWord = false;
@@ -26,7 +26,7 @@ namespace CozaLozaWoza
                 {
                     string stringFromWordValPair = (string)wordValuePair[0];
                     int numFromWordValPair = (int)wordValuePair[1];
-                    
+
                     if (positionInTheNumList % numFromWordValPair == 0)
                     {
                         funcIsGoingToOutputAWord = true;
@@ -45,7 +45,13 @@ namespace CozaLozaWoza
             }
 
             Console.WriteLine(finalResult);
+            return finalResult;
+        }
 
+        static void Main(string[] args)
+        {
+            string output = CozaLozaWoza();
+            Console.ReadKey();
         }
     }
 }

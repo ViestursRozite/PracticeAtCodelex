@@ -2,7 +2,7 @@
 
 namespace CalculateArea
 {
-    class Program10
+    public class Program10
     {
         static void Main(string[] args)
         {

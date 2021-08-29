@@ -3,9 +3,9 @@ using System;
 
 namespace GravityCalculator
 {
-    class Program7
+    public class Program7
     {
-        static void Main(string[] args)
+        public static double DoGravity()
         {
             double gravity = -9.81;  // Earth's gravity in m/s^2
             double initialVelocity = 0.0;
@@ -17,6 +17,12 @@ namespace GravityCalculator
             finalPosition = initialPosition + (0.5 * ((gravity * fallingTimeSquared) + initialVelocity));
 
             Console.WriteLine("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
+            return finalPosition;
+        }
+
+        static void Main(string[] args)
+        {
+            DoGravity();
             Console.ReadKey();
         }
     }
