@@ -6,20 +6,20 @@ namespace DragRace
 {
     class Mazda : CarClass, ICar, IBoost
     {
-        public Mazda(int acceleration, int brakingPower)
-        {
-            this.currentSpeed = 0;
-            this.acceleration = acceleration;
-            this.brakingPower = brakingPower;
-            this.engineSound = "Rrrrrrr.....";
-        }
+        public Mazda(int acceleration, int brakingPower, int currcurrentSpeed, string engineSound = "Rrrrrrr.....") :
+            base(acceleration, brakingPower, engineSound) { }
         public void UseNitrousOxideEngine()
         {
-            this.currentSpeed = this.currentSpeed + (2 * this.acceleration);
+            this.CurrentSpeed = this.CurrentSpeed + (2 * this.Acceleration);
         }
         public new string CarType()
         {
             return $"{this.GetType()}";
+        }
+
+        void ICar.StartEngine()
+        {
+            base.StartEngine();
         }
     }
 }

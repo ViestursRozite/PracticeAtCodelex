@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace FlightPlanner
 {
-    class Program6
+    public class Program6
     {
         public static int getInt(string messageToUser, int minVal, int maxVal)
         {
@@ -31,13 +31,8 @@ namespace FlightPlanner
         private const string fileName = "flights.txt";
         private static string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\", fileName));
 
-        private static void Main(string[] args)
+        public static HashSet<string> UniqueStartingPointsToHashSet(HashSet<string> travelStartingPoints, string[] readText)
         {
-            //Goal: make travel map
-            HashSet<string> travelStartingPoints = new HashSet<string>();//stores starting airports
-            Dictionary<string, HashSet<string>> travelMap = new Dictionary<string, HashSet<string>>();
-
-            var readText = File.ReadAllLines(path);
             foreach (var s in readText)//unique starting points to hashSet
             {
                 //locations formatted: "New York -> Hana Lu Lu"
@@ -46,8 +41,11 @@ namespace FlightPlanner
 
                 travelStartingPoints.Add(leavesFrom);
             }
+            return travelStartingPoints;
+        }
 
-            //fill Dict travelMap  keys: "TravelStartingPoint" values: {hashMaps of allowed destinations}
+        public static void FillTravelMap(HashSet<string> travelStartingPoints, string[] readText, Dictionary<string, HashSet<string>> travelMap)
+        {
             foreach (string startingPoint in travelStartingPoints)//Keys
             {
                 HashSet<string> travelablePlaces = new HashSet<string>();//Values
@@ -64,6 +62,46 @@ namespace FlightPlanner
                 }
                 travelMap.Add(startingPoint, travelablePlaces);//Fill travelMap
             }
+        }
+
+        private static void Main(string[] args)
+        {
+            //Goal: make travel map
+            HashSet<string> travelStartingPoints = new HashSet<string>();//stores starting airports
+            Dictionary<string, HashSet<string>> travelMap = new Dictionary<string, HashSet<string>>();
+
+            var readText = File.ReadAllLines(path);
+
+            UniqueStartingPointsToHashSet(travelStartingPoints, readText);
+
+            //foreach (var s in readText)//unique starting points to hashSet
+            //{
+            //    //locations formatted: "New York -> Hana Lu Lu"
+            //    int rg = s.IndexOf('>');
+            //    string leavesFrom = s.Substring(0, (rg - 2));
+
+            //    travelStartingPoints.Add(leavesFrom);
+            //}
+
+
+            FillTravelMap(travelStartingPoints, readText, travelMap);
+            //fill Dict travelMap  keys: "TravelStartingPoint" values: {hashMaps of allowed destinations}
+            //foreach (string startingPoint in travelStartingPoints)//Keys
+            //{
+            //    HashSet<string> travelablePlaces = new HashSet<string>();//Values
+            //    foreach (var s in readText)
+            //    {
+            //        int rg = s.IndexOf('>');
+            //        string goesTo = s.Substring((rg + 2));
+            //        string leavesFrom = s.Substring(0, (rg - 2));
+
+            //        if (startingPoint.Equals(leavesFrom))
+            //        {
+            //            travelablePlaces.Add(goesTo);//Values
+            //        }
+            //    }
+            //    travelMap.Add(startingPoint, travelablePlaces);//Fill travelMap
+            //}
 
             //Display starting locations
             Console.WriteLine("press 0 to exit");

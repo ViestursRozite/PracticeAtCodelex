@@ -2,7 +2,7 @@
 
 namespace Exercise1
 {
-    class Product
+    public class Product
     {
         decimal price;
         int amount;

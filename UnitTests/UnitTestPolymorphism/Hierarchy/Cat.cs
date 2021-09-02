@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Hierarchy
 {
-    class Cat : Felime
+    public class Cat : Feline
     {
         public string Breed { get; }
         private string Sound = "Mnnnnnauu";

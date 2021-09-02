@@ -6,27 +6,38 @@ namespace DragRace
 {
     public abstract class CarClass
     {
-        protected int currentSpeed { get; set; }
-        protected int acceleration { get; set; }
-        protected int brakingPower { get; set; }
-        protected string engineSound { get; set; }
+        protected int CurrentSpeed { get; set; }
+        protected int Acceleration { get; set; }
+        protected int BrakingPower { get; set; }
+        protected string EngineSound { get; set; }
+        
+        public CarClass(int acceleration, int brakingPower, string engineSound, int currentSpeed = 0)
+        {
+            this.CurrentSpeed = 0;
+            this.Acceleration = acceleration;
+            this.BrakingPower = brakingPower;
+            this.EngineSound = engineSound;
+        }
+
         public virtual void SpeedUp()
         {
-            currentSpeed = currentSpeed + acceleration;
+            CurrentSpeed = CurrentSpeed + Acceleration;
         }
+
         public void SlowDown()
         {
-            currentSpeed = currentSpeed - brakingPower;
+            CurrentSpeed = CurrentSpeed - BrakingPower;
         }
 
         public string ShowCurrentSpeed()
         {
-            return currentSpeed.ToString();
+            return CurrentSpeed.ToString();
         }
 
-        public void StartEngine()
+        public string StartEngine()
         {
-            Console.WriteLine(engineSound);
+            Console.WriteLine(EngineSound);
+            return EngineSound;
         }
         public string CarType()
         {

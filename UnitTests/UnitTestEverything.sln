@@ -33,7 +33,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolymorphismExercise01", "U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolymorphismExercise06", "UnitTestPolymorphism\Hierarchy\PolymorphismExercise06.csproj", "{75F2CC4E-7FF1-4634-BD24-CDB25DB61470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsArithmetics", "UnitTestsArithmetics\UnitTestsArithmetics.csproj", "{813812A9-20E3-4BEE-8864-433CFDF05D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsArithmetics", "UnitTestsArithmetics\UnitTestsArithmetics.csproj", "{813812A9-20E3-4BEE-8864-433CFDF05D74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsClasses", "UnitTestCasses\UnitTestsClasses.csproj", "{286D1A4F-D21D-4B5A-AE4E-913277327447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectCollections", "TestProjectCollections\TestProjectCollections.csproj", "{340F183A-FC2F-4068-AF79-20541AD54839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectPolymorphism", "TestProjectPolymorphism\TestProjectPolymorphism.csproj", "{C4040A55-6504-40D3-BEEF-EFC82AE1709B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +111,18 @@ Global
 		{813812A9-20E3-4BEE-8864-433CFDF05D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{813812A9-20E3-4BEE-8864-433CFDF05D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{813812A9-20E3-4BEE-8864-433CFDF05D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286D1A4F-D21D-4B5A-AE4E-913277327447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286D1A4F-D21D-4B5A-AE4E-913277327447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286D1A4F-D21D-4B5A-AE4E-913277327447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286D1A4F-D21D-4B5A-AE4E-913277327447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340F183A-FC2F-4068-AF79-20541AD54839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340F183A-FC2F-4068-AF79-20541AD54839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340F183A-FC2F-4068-AF79-20541AD54839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340F183A-FC2F-4068-AF79-20541AD54839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4040A55-6504-40D3-BEEF-EFC82AE1709B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4040A55-6504-40D3-BEEF-EFC82AE1709B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4040A55-6504-40D3-BEEF-EFC82AE1709B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4040A55-6504-40D3-BEEF-EFC82AE1709B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,11 +7,10 @@ using System.IO;
 
 namespace WordCount
 {
-    class Program5
+    public class Program5
     {
-        public static int[] WordCount(string path)
+        public static int[] WordCount(string text)
         {
-            string text = File.ReadAllText(path);
             char[] delimiters = new char[] { ' ', '\r', '\n' };
             char[] letters = text.ToCharArray();
             
@@ -30,10 +29,19 @@ namespace WordCount
             int[] result = new int[] { numLines, numWords, chars, computerChars};
             return result;
         }
+
+        public static string GetPathToLear()
+        {
+            string fileName = "lear.txt";
+            string path = Path.Combine(Environment.CurrentDirectory, @"..\..\", fileName);
+            return path;
+        }
+
         static void Main(string[] args)
         {
-            string path = @"C:\Darbs\12,08,2021\WordCount\lear.txt";
-            int[] data = WordCount(path);
+
+            string path = GetPathToLear();
+            int[] data = WordCount(File.ReadAllText(path));
 
             Console.WriteLine($"The given text file contains:\n" +
                 $"{data[0]} lines\n" +

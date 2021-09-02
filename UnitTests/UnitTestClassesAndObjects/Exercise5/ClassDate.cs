@@ -6,9 +6,9 @@ namespace Exercise5
 {
     public class Date
     {
-        string month, day, year;
+        string day, month, year;
 
-        public Date(string month, string day, string year)
+        public Date( string day, string month, string year)
         {
             this.month = month;
             this.day = day;
@@ -49,9 +49,10 @@ namespace Exercise5
             }
         }
 
-        public void DisplayDate()
+        public string DisplayDate()
         {
-            Console.WriteLine($"{Month}/{Day}/{Year}");
+            Console.WriteLine($"{Day}/{Month}/{Year}");
+            return $"{Day}/{Month}/{Year}";
         }
     }
 }
