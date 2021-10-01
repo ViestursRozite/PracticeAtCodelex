@@ -6,23 +6,21 @@ namespace Firm
 {
     public class Commission : Hourly
     {
-        private double CommissionRate { get; set; }
-        private double TotalSales { get; set; }
+        public double CommissionRate { get; set; }
+        public double TotalSales { get; set; }
         public Commission(
             string eName, 
             string eAddress, 
             string ePhone, 
             string socSecNumber, 
             double rate,
-
             double percentOnSales)
-            
             :base(eName, eAddress, ePhone, socSecNumber, rate)
         {
             this.CommissionRate = percentOnSales;
         }
 
-        public void addSales(double totalSales)
+        public void AddSales(double totalSales)
         {
             this.TotalSales += totalSales;
         }

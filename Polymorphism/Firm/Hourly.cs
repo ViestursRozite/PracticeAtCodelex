@@ -4,12 +4,12 @@ namespace Firm
     {
         private int _hoursWorked;
         //-----------------------------------------------------------------
-        // Sets up this hourly employee using the specified information.
+        // Sets up hourly employee using the specified information.
         //-----------------------------------------------------------------
         public Hourly(string eName, string eAddress, string ePhone, string socSecNumber, double rate) : base(eName,
             eAddress, ePhone, socSecNumber, rate)
         {
-            _hoursWorked = 0;
+            this._hoursWorked = 0;
         }
 
         //-----------------------------------------------------------------

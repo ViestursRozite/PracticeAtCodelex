@@ -6,7 +6,7 @@ namespace Hierarchy
 {
     public class Zebra : Mammal
     {
-        private string Sound = "Muuu?";
+        private string _sound = "Muuu?";
         public Zebra(string animalName, double animalWeight, int foodEaten, string livingRegion, string animalType = "Zebra") :
             base(animalName, animalType, animalWeight, foodEaten, livingRegion)
         { }
@@ -21,9 +21,10 @@ namespace Hierarchy
                 Console.WriteLine($"{base.AnimalType} do not eat that type of food!");
             }
         }
+
         public override void MakeSound()
         {
-            Console.WriteLine(this.Sound);
+            Console.WriteLine(this._sound);
         }
     }
 }

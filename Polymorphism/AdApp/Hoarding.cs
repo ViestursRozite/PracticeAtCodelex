@@ -2,14 +2,14 @@ namespace AdApp
 {
     public class Hoarding: Advert
     {
-        private int rate;
+        private int _rate;
         //per day
-        private int numDays;
+        private int _numDays;
 
         public Hoarding(int fee, int rate, int numDays) : base(fee)
         {
-            this.numDays = numDays;
-            this.rate = rate;
+            this._numDays = numDays;
+            this._rate = rate;
         }
 
         public new int Cost() 

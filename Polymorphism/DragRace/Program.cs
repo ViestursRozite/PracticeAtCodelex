@@ -18,13 +18,15 @@ namespace DragRace
 
         private static void Main(string[] args)
         {
-            CarClass[] cars = { 
+            CarClass[] cars = 
+            { 
                 new Mazda(6, 4), 
                 new Audi(8, 6), 
                 new Bmw(8, 6), 
                 new Lada(4, 4), 
                 new Lexus(6, 8), 
-                new Tesla(9, 9) };
+                new Tesla(9, 9) 
+            };
 
             foreach (var car in cars)
             {

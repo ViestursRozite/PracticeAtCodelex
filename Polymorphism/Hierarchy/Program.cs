@@ -26,11 +26,22 @@ namespace Hierarchy
             Console.WriteLine($"number read ({userInput})");
             return userInput;
         }
+
+        private static dynamic ReturnAnimaType(string userInput)
+        {
+            if (userInput.Equals("Mouse")) return Mouse;
+            else if (userInput.Equals("Zebra")) return Zebra;
+            else if (userInput.Equals("Tiger")) return Tiger;
+            else if (userInput.Equals("Cat")) return Cat;
+            else return ;
+        }
+
         public static Animal SpawnAnimal()
         {
             string animalType = "";
             bool loop = true;
             Animal someAnimal = null;
+            
             while (loop)
             {
                 animalType = GetString("Enter one of the folowing:\n" +

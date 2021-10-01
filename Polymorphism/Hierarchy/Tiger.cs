@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Hierarchy
 {
-    public class Tiger : Felime
+    public class Tiger : Feline
     {
-        private string Sound = "RAAAWRR";
+        private string _sound = "RAAAWRR";
         public Tiger(string animalName, double animalWeight, int foodEaten, string livingRegion, string animalType = "Tiger") :
             base(animalName, animalType, animalWeight, foodEaten, livingRegion)
         { }
@@ -23,7 +23,7 @@ namespace Hierarchy
         }
         public override void MakeSound()
         {
-            Console.WriteLine(this.Sound);
+            Console.WriteLine(this._sound);
         }
     }
 }

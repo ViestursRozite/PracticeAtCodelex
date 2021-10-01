@@ -6,10 +6,9 @@ namespace Hierarchy
 {
     public class Mouse : Mammal
     {
-        private string Sound = "*ultrasonic noises";
+        private string _sound = "*ultrasonic noises";
         public Mouse(string animalName, double animalWeight, int foodEaten, string livingRegion, string animalType = "Mouse"):
-            base(animalName, animalType, animalWeight, foodEaten, livingRegion)
-        { }
+            base(animalName, animalType, animalWeight, foodEaten, livingRegion) { }
 
         public override void Eat(Food food, int quantity)
         {
@@ -24,7 +23,7 @@ namespace Hierarchy
         }
         public override void MakeSound()
         {
-            Console.WriteLine(this.Sound);
+            Console.WriteLine(this._sound);
         }
     }
 }
