@@ -8,8 +8,7 @@ namespace Hierarchy
     {
         private string Sound = "RAAAWRR";
         public Tiger(string animalName, double animalWeight, int foodEaten, string livingRegion, string animalType = "Tiger") :
-            base(animalName, animalType, animalWeight, foodEaten, livingRegion)
-        { }
+            base(animalName, animalType, animalWeight, foodEaten, livingRegion) { }
         public override void Eat(Food food, int quantity)
         {
             if (food.FoodClass.Equals("Meat"))

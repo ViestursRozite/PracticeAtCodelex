@@ -5,7 +5,7 @@ namespace FooCorpOvertime
 {
     public class Program8
     {
-        public static string checkEmployeeHours(int hoursWorked, decimal wePayThismuch)
+        public static string CheckEmployeeHours(int hoursWorked, decimal wePayThismuch)
         {
             int maxHoursWeAllow = 60;
             int weeklyNormalHours = 40;
@@ -43,7 +43,7 @@ namespace FooCorpOvertime
             }
         }
 
-        public static string[] checkAllEmployees(object[] arrOfWorkersPayHours)
+        public static string[] CheckAllEmployees(object[] arrOfWorkersPayHours)
         {
             List<string> halfResult = new List<string>();
             foreach (object[] worker in arrOfWorkersPayHours)
@@ -52,7 +52,7 @@ namespace FooCorpOvertime
                 decimal pay = (decimal)worker[1];
                 int hours = (int)worker[2];
 
-                halfResult.Add(checkEmployeeHours(hours, pay));
+                halfResult.Add(CheckEmployeeHours(hours, pay));
             }
             return halfResult.ToArray();
         }
@@ -67,7 +67,7 @@ namespace FooCorpOvertime
                 new object[] { 4, 10.00M, 59 }
             };
 
-        checkAllEmployees(allEmployees);
+        CheckAllEmployees(allEmployees);
         }
     }
 }

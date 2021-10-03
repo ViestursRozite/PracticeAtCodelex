@@ -6,15 +6,13 @@ using PhoneBook;
 
 namespace TestProjectCollections
 {
-    public class UnitTest3
+    public class PhoneDirectoryTests
     {
         private PhoneDirectory _phoneDirectory = new PhoneDirectory();
 
         [Fact]
         public void PutNumber_In2StringsNameAndNumber_OutExpectPhoneDirectoryToContainEntry()
         {
-            //Arrange
-
             //Act
             _phoneDirectory.PutNumber("Adam", "25839584");
             //Assert

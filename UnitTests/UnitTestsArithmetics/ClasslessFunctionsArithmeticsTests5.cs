@@ -4,7 +4,7 @@ using FooCorpOvertime;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim5
+    public class ClasslessFunctionsArithmeticsTests5
     {
         
         [TestMethod]
@@ -15,7 +15,7 @@ namespace UnitTestsArithmetics
             decimal payRate = 0;
             string correct = "Error, we can not pay this little";
             //Act
-            string result = Program8.checkEmployeeHours(hoursWorked, payRate);
+            string result = Program8.CheckEmployeeHours(hoursWorked, payRate);
             //Assert 
             Assert.AreEqual(correct, result);
         }
@@ -28,7 +28,7 @@ namespace UnitTestsArithmetics
             decimal payRate = 8.00m;
             string correct = "total pay: 320.00";
             //Act
-            string result = Program8.checkEmployeeHours(hoursWorked, payRate);
+            string result = Program8.CheckEmployeeHours(hoursWorked, payRate);
             //Assert 
             Assert.AreEqual(correct, result);
         }
@@ -41,7 +41,7 @@ namespace UnitTestsArithmetics
             decimal payRate = 10.00m;
             string correct = $"total pay: 700.00";
             //Act
-            string result = Program8.checkEmployeeHours(hoursWorked, payRate);
+            string result = Program8.CheckEmployeeHours(hoursWorked, payRate);
             //Assert 
             Assert.AreEqual(correct, result);
         }
@@ -54,7 +54,7 @@ namespace UnitTestsArithmetics
             decimal payRate = 10.00m;
             string correct = "Error, he/she works too much";
             //Act
-            string result = Program8.checkEmployeeHours(hoursWorked, payRate);
+            string result = Program8.CheckEmployeeHours(hoursWorked, payRate);
             //Assert 
             Assert.AreEqual(correct, result);
         }
@@ -72,7 +72,7 @@ namespace UnitTestsArithmetics
             };
             int correct = allEmployees.Length;
             //Act
-            string[] halfResult = Program8.checkAllEmployees(allEmployees);
+            string[] halfResult = Program8.CheckAllEmployees(allEmployees);
             int result = halfResult.Length;
             //Assert 
             Assert.AreEqual(correct, result);

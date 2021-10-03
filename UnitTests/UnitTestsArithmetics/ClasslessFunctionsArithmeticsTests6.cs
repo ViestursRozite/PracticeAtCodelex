@@ -4,7 +4,7 @@ using CalculateArea;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim6
+    public class ClasslessFunctionsArithmeticsTests6
     {
         
         [TestMethod]

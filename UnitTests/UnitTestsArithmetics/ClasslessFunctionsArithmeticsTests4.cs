@@ -4,7 +4,7 @@ using GravityCalculator;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim4
+    public class ClasslessFunctionsArithmeticsTests4
     {
         
         [TestMethod]

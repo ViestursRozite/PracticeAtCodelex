@@ -4,7 +4,7 @@ using CanThisMake15;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim1
+    public class ClasslessFunctionsArithmeticsTests1
     {
         [TestMethod]
         public void CheckFor15_InSumIs15_OutTrue()

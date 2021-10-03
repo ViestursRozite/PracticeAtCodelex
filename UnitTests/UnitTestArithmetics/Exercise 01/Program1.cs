@@ -15,9 +15,9 @@ namespace CanThisMake15
                 Int32.TryParse(numsAsStrings[i], out holdBothNumbers[i]);
             }
 
-            bool eitherIs15 = (holdBothNumbers[0] == 15 || holdBothNumbers[1] == 15) ? true : false;
-            bool sumIs15 = (holdBothNumbers[0] + holdBothNumbers[1] == 15) ? true : false;
-            bool difIs15 = (holdBothNumbers[0] - holdBothNumbers[1] == 15) ? true : false;
+            bool eitherIs15 = holdBothNumbers[0] == 15 || holdBothNumbers[1] == 15 ;
+            bool sumIs15 = holdBothNumbers[0] + holdBothNumbers[1] == 15 ;
+            bool difIs15 = holdBothNumbers[0] - holdBothNumbers[1] == 15 ;
 
             if (eitherIs15 || sumIs15 || difIs15)
             {

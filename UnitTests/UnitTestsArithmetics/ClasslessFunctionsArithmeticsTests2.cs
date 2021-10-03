@@ -4,7 +4,7 @@ using CheckOddEven;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim2
+    public class ClasslessFunctionsArithmeticsTests2
     {
         
         [TestMethod]

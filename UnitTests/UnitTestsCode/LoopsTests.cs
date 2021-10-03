@@ -4,7 +4,7 @@ using Exercise6;
 namespace UnitTestsCode
 {
     [TestClass]
-    public class UnitTest1
+    public class LoopsTests
     {
         
         [TestMethod]

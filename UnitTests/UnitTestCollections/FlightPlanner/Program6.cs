@@ -74,34 +74,7 @@ namespace FlightPlanner
 
             UniqueStartingPointsToHashSet(travelStartingPoints, readText);
 
-            //foreach (var s in readText)//unique starting points to hashSet
-            //{
-            //    //locations formatted: "New York -> Hana Lu Lu"
-            //    int rg = s.IndexOf('>');
-            //    string leavesFrom = s.Substring(0, (rg - 2));
-
-            //    travelStartingPoints.Add(leavesFrom);
-            //}
-
-
             FillTravelMap(travelStartingPoints, readText, travelMap);
-            //fill Dict travelMap  keys: "TravelStartingPoint" values: {hashMaps of allowed destinations}
-            //foreach (string startingPoint in travelStartingPoints)//Keys
-            //{
-            //    HashSet<string> travelablePlaces = new HashSet<string>();//Values
-            //    foreach (var s in readText)
-            //    {
-            //        int rg = s.IndexOf('>');
-            //        string goesTo = s.Substring((rg + 2));
-            //        string leavesFrom = s.Substring(0, (rg - 2));
-
-            //        if (startingPoint.Equals(leavesFrom))
-            //        {
-            //            travelablePlaces.Add(goesTo);//Values
-            //        }
-            //    }
-            //    travelMap.Add(startingPoint, travelablePlaces);//Fill travelMap
-            //}
 
             //Display starting locations
             Console.WriteLine("press 0 to exit");

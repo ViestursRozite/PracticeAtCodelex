@@ -4,7 +4,7 @@ using CozaLozaWoza;
 namespace UnitTestsArithmetics
 {
     [TestClass]
-    public class UnitTestArim3
+    public class ClasslessFunctionsArithmeticsTests3
     {
         
         [TestMethod]

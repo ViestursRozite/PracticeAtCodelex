@@ -5,7 +5,7 @@ using System;
 namespace UnitTestCasses
 {
     [TestClass]
-    public class UnitTest2
+    public class DateTests2
     {
         [TestMethod]
         public void DateConstructor_InNewInstance_OutDay()

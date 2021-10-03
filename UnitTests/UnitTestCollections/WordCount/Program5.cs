@@ -39,7 +39,6 @@ namespace WordCount
 
         static void Main(string[] args)
         {
-
             string path = GetPathToLear();
             int[] data = WordCount(File.ReadAllText(path));
 

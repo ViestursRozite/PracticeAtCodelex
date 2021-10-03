@@ -4,7 +4,7 @@ using DragRace;
 
 namespace TestProjectPolymorphism
 {
-    public class UnitTest1
+    public class CarClassTests
     {
         CarClass car = new Lexus(9,8,0);
 

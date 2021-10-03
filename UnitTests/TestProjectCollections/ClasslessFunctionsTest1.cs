@@ -5,7 +5,7 @@ using System.IO;
 
 namespace TestProjectCollections
 {
-    public class UnitTest1
+    public class ClasslessFunctionsTest1
     {
         [Fact]
         public void WordCount_InString_Out2Lines()

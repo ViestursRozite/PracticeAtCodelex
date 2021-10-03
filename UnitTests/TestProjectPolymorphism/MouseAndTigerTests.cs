@@ -4,7 +4,7 @@ using Hierarchy;
 
 namespace TestProjectPolymorphism
 {
-    public class UnitTest2
+    public class MouseAndTigerTests
     {
         Mouse mouse = new Mouse("MouseName", 10, 12, "LivingRegionSomething1");
         Tiger tiger = new Tiger("TigerName", 100, 120, "LivingRegionSomething2");

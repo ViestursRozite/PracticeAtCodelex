@@ -17,7 +17,6 @@ namespace CalculateArea
             }
             decimal area = (decimal)Math.PI * radius * 2;
             return Convert.ToDouble(area);
-            //throw new NotImplementedException();
         }
 
         public static double? areaOfRectangle(decimal length, decimal width)
@@ -29,7 +28,6 @@ namespace CalculateArea
             }
             decimal area = length * width;
             return Convert.ToDouble(area);
-            //throw new NotImplementedException();
         }
 
         public static double? areaOfTriangle(decimal ground, decimal h)
@@ -41,7 +39,6 @@ namespace CalculateArea
             }
             decimal area = 0.5M * (ground * h);
             return Convert.ToDouble(area);
-            //throw new NotImplementedException();
         }
     }
 }

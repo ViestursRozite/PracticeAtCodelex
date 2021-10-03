@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace TestProjectCollections
 {
-    public class UnitTest2
+    public class ClasslessFunctionsTest2
     {
         [Fact]
-        public void FillTravelMap_InReadTet_OutCorrectHashSets()
+        public void FillTravelMap_InReadText_OutCorrectHashSets()
         {
             //Arrange
             HashSet<string> travelStartingPoints = new HashSet<string>();
@@ -49,7 +49,7 @@ namespace TestProjectCollections
             }
         }
         
-             [Fact]
+        [Fact]
         public void UniqueStartingPointsToHashSet_InStringArr_OutCorrectHashSets()
         {
             //Arrange

@@ -5,7 +5,7 @@ using System;
 namespace UnitTestCasses
 {
     [TestClass]
-    public class UnitTest1
+    public class ProductTests
     {
         [TestMethod]
         public void PriceChange_InPrice10ChangeWithMinus6_OutPrice4()
@@ -39,8 +39,8 @@ namespace UnitTestCasses
             //Arrange
             Product product = new Product(10, 10, "Phone");
             var expected = 13;
-            //Act
             product.AmountChange = 3;
+            //Act
             var result = product.AmountChange;
             //Assert 
             Assert.AreEqual(expected, result);
