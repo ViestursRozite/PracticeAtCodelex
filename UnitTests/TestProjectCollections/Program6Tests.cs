@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace TestProjectCollections
 {
-    public class ClasslessFunctionsTest2
+    public class Program6Tests
     {
         [Fact]
         public void FillTravelMap_InReadText_OutCorrectHashSets()
